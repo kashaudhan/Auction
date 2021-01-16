@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <!-- <script src="https://raw.githubusercontent.com/ChainSafe/web3.js/1.x/dist/web3.min.js"></script> -->
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <title>Auction App</title>
+</head>
+<body>
+    <h1>Auction</h1>
+    <div class="detail row">
+        <div class="column">
+            <label class="beneficiary">Beneficiary</label>
+            <p id="beneficiary">Loading...</p>
+        </div>
+        <div class="column">
+            <label class="raised">Highest Bid</label>
+            <p id="raised">Loading...</p>
+        </div>
+        <div class="column">
+            <label class="timeleft">Timeleft</label>
+            <p id="timeleft">Loading...</p>    
+        </div>
+        <div class="column">
+            <label class="highestBidder">Highest Bidder</label>
+            <p id="highestBidder">Loading...</p>
+        </div>
+        <div class="column">
+            <label class="yourAccount">Your Account</label>
+            <p id="yourAccount">Loading...</p>
+        </div>
+        <div class="column">
+            <label class="balance">Balance</label>
+            <p id="balance">Loading...</p>
+        </div>
+        
+    </div>
+    <form id="from">
+        <div class="bid">
+            <!-- <label class="form-bid">From Account: </label>
+            <input class="input" type="text" placeholder="0x00000" disabled>
+            <br> -->
+            <label class="form-bid">Bid Amount:</label>
+            <input class="input" type="number" placeholder="19.99" step="any" id="input" autocomplete="off">
+            <br>
+            <div class="bid-button">
+                <button id="place-bid">Bid</button>
+            </div>
+        </div>
+    </form>
+    <div class="endAuction">
+        <button id="end-auction">End Auction</button>
+    </div>
+</body>
+</html>

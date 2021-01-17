@@ -5,6 +5,40 @@ the auction in raising a bid, withdrawing money from the bid and an option to en
 built using the ```Truffle console``` and ```Ganache``` which are part of Truffle framework. Ganache is the personal block chain
 that allows developers to create smart contracts.
 
+Based on the [Simple Open Auction](https://docs.soliditylang.org/en/v0.5.3/solidity-by-example.htm).
+
+#### Installation
+
+1. Install Truffle globally.
+    ```javascript
+    npm install -g truffle
+    ```
+	Also Requires [Ganache](http://truffleframework.com/ganache/) to be preinstalled and running for a personal Truffle development blockchain.
+    
+    
+2. Clone the repo.
+
+3. Run the development console in the repo.
+    ```javascript
+    truffle develop
+    ```
+
+4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
+    ```javascript
+    compile
+    migrate
+    ```
+
+5. Run the `liteserver` development server (outside the development console) for front-end hot reloading. Smart contract changes must be manually recompiled and migrated.
+    ```javascript
+    // Serves the front-end on http://localhost:3000
+    npm run dev
+    ```
+
+
+
+
+
 
 ## Brief Explanation of Methods
 
@@ -34,3 +68,12 @@ the amount.
 written at the beginning.
 3. Once the  `auctionEnd()` method is invoked it cannot be called again. This is checked by the flag auctionAlive
 which is set to false, when once invoked.
+
+
+
+#### FAQ
+
+* __How do I use this with the EthereumJS TestRPC?__
+
+    It's as easy as modifying the config file! [Check out our documentation on adding network configurations](http://truffleframework.com/docs/advanced/configuration#networks). Depending on the port you're using, you'll also need to update line 16 of `src/js/app.js`.
+

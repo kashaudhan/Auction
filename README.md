@@ -5,7 +5,7 @@ the auction in raising a bid, withdrawing money from the bid and an option to en
 built using the ```Truffle console``` and ```Ganache``` which are part of Truffle framework. Ganache is the personal block chain
 that allows developers to create smart contracts.
 
-Based on the [Simple Open Auction](https://docs.soliditylang.org/en/v0.5.3/solidity-by-example.htm).
+Based on the [Simple Open Auction](https://docs.soliditylang.org/en/v0.5.3/solidity-by-example.html#simple-open-auction).
 
 #### Installation
 
